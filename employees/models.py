@@ -17,6 +17,6 @@ class Employee(models.Model):
     modifieddate = models.DateTimeField(auto_now=True)
     organizationnode = models.CharField(max_length=255, default='/')
 
-    class Meta:
-        db_table = 'humanresources\".\"employee'
-        managed = False
+    # class Meta:
+    #     db_table = '"humanresources"."employee"'
+    #     managed = False
